@@ -2,7 +2,6 @@
 //Meet Parekh
 //160470116031
 #include<iostream>
-
 #include<cstring>
 using namespace std;
 //Program 1
@@ -54,13 +53,50 @@ class complex{
 };
 //End of Program 2
 
+//Program 3
+class book{
+
+    char book_title[20],publisher[20],author_name[20];
+public:
+    friend istream& operator>>(istream&,book&);
+    friend ostream& operator<<(ostream&,book&);
+
+};
+
+istream&  operator>> (istream &in,book &b1){
+
+    cout<< "Author Name is "<<endl;
+    in>>b1.author_name;
+    cout<< "Book Title is "<<endl;
+    in>>b1.book_title;
+    cout<<"Publisher is "<<endl;
+    in>>b1.publisher;
+
+    return in;
+}
+
+ostream& operator<< (ostream &out,book &b1){
+
+    out << "Author Name is "<<b1.author_name<<endl;
+    out << "Book Title is "<<b1.book_title<<endl;
+    out << "Publisher is "<<b1.publisher<<endl;
+
+    return out;
+}
+//End of Program 3
+
+
+//Program 4
+class
+//End of Program 4
+
 
 int main(){
 
     int i;
     cout<<"Below is given the program list,enter the number to access the program"<<endl;
 
-    cout<<"\n 1. Program 1\n 2. Program 2"<<endl;
+    cout<<"\n 1. Program 1\n 2. Program 2\n 3. Program 3"<<endl;
     cin>>(i);
 
     switch(i){
@@ -87,6 +123,13 @@ int main(){
         }
         //End of main function of Program 2
         break;
+        case 3:
+        //Main function of Program 3
+        {
+            book book1;
+            cin>>book1;
+            cout<<book1;   
+        }   
     };
 
 }
