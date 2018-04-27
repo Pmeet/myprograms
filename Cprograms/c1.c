@@ -1,21 +1,5 @@
 #include<stdio.h>
 int main(){
-
-printf("Hello World!");
-
+    printf("Hellow world");   
+    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

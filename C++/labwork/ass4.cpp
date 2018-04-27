@@ -87,7 +87,7 @@ ostream& operator<< (ostream &out,book &b1){
 
 
 //Program 4
-class
+
 //End of Program 4
 
 

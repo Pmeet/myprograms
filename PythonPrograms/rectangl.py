@@ -7,7 +7,7 @@ while(tcase>0):
 			if(sides[j]==sides[k]):
 				e+=1
 	if(e==3 or e==1 or e==0):
-		print "NO"
+		print("NO")
 	else:
-		print "YES"
+		print("YES")
 	tcase-=1			

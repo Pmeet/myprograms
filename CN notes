@@ -1,0 +1,21 @@
+port number-16 bits
+HTTp portnumber- 80
+IPv4-32bits
+IPv6-128bits
+mac address - 48bits
+
+number of NIC(network interfeace card)= number of ports or medium like ethernet wifif bluetooth.
+APP layer - user interface
+Transport layer -
+    responsible for process to process delivery , assigning port etc
+        TCP, UDP.
+        TCP - reliable data transfer, before transfer needs to establish connection,http,ftp use this protocol to transfer data
+        UDP - no reliablity, direct transfer 
+    When opening any website the port number that our network contains is not among the 0-1023 reserved port numbers
+
+Network layer -
+    unreliable communication as it does not track the packets like Transport layer does. Responsible for source to destination delivery using forwarding table.
+    IPv4-32bits,IPv6-128bits,ICM,IGM protocols.
+Data link layer -
+    node to node delivery
+    protocol - ethernet,bluetooth , WIFI- 802.11 a/b/g , mac address - 48bits
