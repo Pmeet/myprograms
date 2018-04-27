@@ -19,34 +19,20 @@ public:
         }
         cout<<endl;
     }
-    // void bubbleSort(){
-    //     for(pass=0;pass<MAX;pass++){
-    //         cout<<"\n\nThis is pass number "<<pass<<endl;
-    //         for(i=0;i<MAX-1;i++){
-    //             if(arr[i]>arr[i+1]){
-    //                 hold=arr[i];
-    //                 arr[i]=arr[i+1];
-    //                 arr[i+1]=hold;
-    //             }
-    //         }
-    //     }
-    // }
+
 };
 
     class BubbleSort: public Array{
-        int i,pass,hold,chk=0;
-        bool swapped;
+        int i,pass,hold;
     public:
         void bubbleSort(){
           for(pass=0;pass<MAX;pass++){
-              cout<<"\n\nThis is pass number "<<pass<<endl;
               for(i=0;i<MAX-1;i++){
-                    if(arr[i]>arr[i+1] && cout<<"checked "<<chk<<" times"<<endl){
+                    if(arr[i]>arr[i+1]){
                         hold=arr[i];
                         arr[i]=arr[i+1];
                         arr[i+1]=hold;
-                        chk++;
-                    }
+                        }
                 }
             }
         }
