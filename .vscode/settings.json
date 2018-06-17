@@ -1,6 +1,6 @@
 {
     "C_Cpp.intelliSenseEngineFallback": "Disabled",
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.errorSquiggles": "Enabled",
     "code-runner.clearPreviousOutput": false,
     "code-runner.executorMap": {
         "javascript": "node",

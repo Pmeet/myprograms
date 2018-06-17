@@ -47,8 +47,8 @@
             "includePath": [
                 "E:\\MinGW\\include\\c++\\4.8.3",
                 "E:\\MinGW\\x86_64-w64-mingw32\\include",
-                "${workspaceRoot}",
-                "E:\\MinGW\\include\\c++\\4.8.3\\x86_64-w64-mingw32"
+                "E:\\MinGW\\include\\c++\\4.8.3\\x86_64-w64-mingw32",
+                "${workspaceRoot}"
             ],
             "defines": [
                 "_DEBUG",
@@ -59,6 +59,7 @@
             "browse": {
                 "path": [
                     "E:\\MinGW\\x86_64-w64-mingw32\\include",
+                    "E:\\MinGW\\include\\c++\\4.8.3\\x86_64-w64-mingw32",
                     "E:\\MinGW\\include\\c++\\4.8.3",
                     "${workspaceRoot}"
                 ],
