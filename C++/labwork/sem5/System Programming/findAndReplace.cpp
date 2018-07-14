@@ -15,6 +15,8 @@ int main(){
     string line;
     while(!file1.eof()){
         getline(file1,line);
-        
+        if(strstr(line,word)){
+            str.replace(str.find(word),strlen(word),replace);
+        }
     }
 }

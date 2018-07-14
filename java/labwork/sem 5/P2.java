@@ -17,7 +17,7 @@ class P2{
     Stu s = new Stu();
     System.out.println("Enter marks of all six subjects ");
     for(int i=0; i < 6; i++){
-        scan.sub[i]=nextInt();
+        s.sub[i]=scan.nextInt();
     }
     s.percent();
     System.out.println("The percentage is "+s.percent+"%");

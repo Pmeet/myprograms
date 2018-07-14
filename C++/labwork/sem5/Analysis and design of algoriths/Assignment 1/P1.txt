@@ -1,0 +1,5 @@
+1.What is algorithm ? explain it in detail
+2.Explain asymptotic notations of algorithm
+3.Calculate lower ,upper and tight bound for the following
+	1 3n+5
+	2 2n^2 + 3n +6

@@ -4,7 +4,7 @@ class Rs2usd{
         float rupees,dollars;
         //1 dollar = 60 rupees therefore 1 rupee = 1/60 dollars
         Scanner s = new Scanner(System.in);
-        rupees=nextInt();
+        rupees=s.nextInt();
         dollars=rupees/60;
         System.out.println("Rupees to dollars are "+rupees);
     }

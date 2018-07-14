@@ -23,9 +23,12 @@ public:
 };
 
 class Sort: public Array{
-    int i,pass,hold;
+    int pass,hold,key,min;
+    int i,j;
 public:
     void bubbleSort();
+    void insertionSort();
+    void selectionSort();
 };
 
 void Sort :: bubbleSort(){
@@ -43,7 +46,43 @@ void Sort :: bubbleSort(){
     }
 }
 
+void Sort :: insertionSort(){
 
+    for(i = 1 ; i < MAX ; i++ ){
+
+        key=arr[i];        
+        j=i-1;
+        while(j>=0 && arr[j]>key){
+            arr[j+1]=arr[j];
+            j--;
+        }
+        arr[j+1]=key;
+
+    }
+
+}
+
+void Sort :: selectionSort(){
+
+    for( i = 0 ; i < MAX ; i++ ){
+
+        min=i;
+
+        for ( j = i+1 ; j < MAX; j++)
+        {
+            if(arr[j]<arr[min]){
+                min=j;
+            }
+        }
+        int temp;
+        temp = arr[i];
+        arr[i]=arr[min];
+        arr[min]=temp;
+        
+
+    }
+
+}
 
 class Searching: public Array{
     int  number_to_search, number_found_at;
@@ -118,15 +157,20 @@ void Searching :: binarySearch(){
 int main()
 {
 
-    Searching s1,s2;
-    int c;
+    // Searching s1,s2;
+    // int c;
+    // s1.get_array();
+    // s1.display_array();
+    // s1.get_number_to_search();
+    // if(s1.get_search_type()==1)
+    //     s1.binarySearch();
+    // else
+    //     s1.linearSearch();
+
+    Sort s1;
     s1.get_array();
+    s1.selectionSort();
     s1.display_array();
-    s1.get_number_to_search();
-    if(s1.get_search_type()==1)
-        s1.binarySearch();
-    else
-        s1.linearSearch();
 
     return 0;
 }

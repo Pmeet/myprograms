@@ -1,0 +1,6 @@
+1.Implement the following algorithms using C++ and UDF
+	linear search
+	binary search
+	bubble sort
+	selection sort 
+	insertion sort
